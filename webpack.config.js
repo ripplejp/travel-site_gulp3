@@ -1,8 +1,9 @@
 const path = require('path');
 module.exports={
+  mode: 'development',
    entry: "./app/assets/scripts/App.js",
    output: {
-     path: path.resolve(${__dirname}, "./app/temp/scripts"),
+     path: path.resolve(__dirname, "./app/temp/scripts"),
      filename:"App.js"
    },
    module:{
@@ -10,7 +11,7 @@ module.exports={
        {
          loader: 'babel-loader',
         query:{
-          presets: ['es2015']
+          presets: ['@babel/preset-env']
          },
         test: /\.js$/,
         exclude: /node_modules/
