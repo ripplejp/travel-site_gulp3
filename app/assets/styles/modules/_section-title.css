@@ -16,10 +16,10 @@
 		color: $mainBlue;
 	}
 
-	&--icon {
+	&__icon {
 		display: block;
 		margin-left: auto;
-		margin-right: .5rem;
+		margin-right: auto;
 		margin-bottom: .6rem;
 
 
